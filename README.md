@@ -34,7 +34,7 @@ MediCare Hospital needs a comprehensive database system to manage patient admiss
 - Patients **1---*** Admissions (one patient can have multiple admissions)
 
 ### ER Diagram
-![ER Diagram](ER_Diagram/hospital_management_erd.png)
+![ER Diagram](hospital_management_erd.png)
 
 ---
 
