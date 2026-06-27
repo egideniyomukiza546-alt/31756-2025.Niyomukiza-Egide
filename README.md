@@ -478,28 +478,66 @@ ORDER BY cost_rank;
 
 SET ECHO OFF
 ```
-##Descriptive Analysis (What Happened?)
-20 admissions, $143,000 revenue
+## Analysis and Findings
 
-Cardiology highest revenue ($53,200)
+### Descriptive Analysis (What Happened?)
 
-April busiest month (5 admissions, $56,500)
+| Metric | Value |
+|--------|-------|
+| Total Admissions | 20 |
+| Total Revenue | $143,000.00 |
+| Average Cost per Admission | $7,150.00 |
+| Most Expensive Admission | $22,000.00 (Heart Bypass) |
+| Cheapest Admission | $800.00 (Allergic Reaction) |
+| Average Length of Stay | 4.5 days |
+| Busiest Month | April 2026 (5 admissions, $56,500) |
+| Top Department by Revenue | Cardiology ($53,200) |
+| Patients with Multiple Visits | 9 out of 10 (90%) |
+| Most Frequent Patient | Mary Uwimana (3 visits) |
 
-9/10 patients have multiple visits
+**Key Findings:**
+- April generated 39.5% of total revenue
+- Cardiology accounts for 37.2% of total hospital revenue
+- 9 out of 10 patients have multiple visits (90% readmission rate)
+- Top 3 doctors generate 49.6% of total revenue
 
-##Diagnostic Analysis (Why Did It Happen?)
-Cardiology: complex heart surgeries
+---
 
-Orthopedics: post-surgery therapy (7.75 days stay)
+### Diagnostic Analysis (Why Did It Happen?)
 
-Pediatrics: non-surgical cases (most efficient)
+| Finding | Root Cause |
+|---------|------------|
+| Cardiology highest revenue | Complex heart surgeries (Bypass: $22,000, Valve: $8,800) |
+| Orthopedics longest stay (7.75 days) | Post-surgery physical therapy requirements |
+| Pediatrics lowest cost | Non-surgical cases, faster recovery |
+| April highest revenue | Major elective surgeries scheduled in spring |
+| Mary Uwimana has 3 visits | Chronic condition (Migraine → Stroke → Concussion) |
+| Dr. Rodriguez highest revenue | Treats most complex Cardiology cases |
+| Cost escalation | Migraine ($3,200) → Stroke ($9,400) - 194% increase |
 
-Mary Uwimana: chronic condition (3 visits)
+**Key Insights:**
+- Seasonal factors affect admission patterns
+- Readmission rates indicate need for preventive care
+- Cardiology has highest average cost ($8,866.67)
 
-##Prescriptive Analysis (What Actions Should Be Taken?)
-8 recommendations with priorities and timelines
+---
 
-Expected annual savings: $20,000 - $30,000
+### Prescriptive Analysis (What Actions Should Be Taken?)
+
+| # | Recommendation | Priority | Timeline | Expected Impact |
+|---|----------------|----------|----------|-----------------|
+| 1 | **Cardiology Cost Optimization** - Review top 25% expensive admissions | HIGH | 3-6 months | Reduce costs by 10-15% |
+| 2 | **Orthopedics Efficiency** - Early-mobilization protocols | HIGH | 4-6 months | Reduce stay by 22% |
+| 3 | **Resource Allocation** - Extra Cardiology staff in peak months | MEDIUM | Immediate | Improve service quality |
+| 4 | **Pediatrics Best Practices** - Use as cost-efficiency model | MEDIUM | 6-12 months | Reduce costs by 20% |
+| 5 | **Preventive Care Program** - Follow-up for chronic conditions | HIGH | 6 months | Reduce readmissions by 20% |
+| 6 | **Doctor Performance Review** - Balance cost vs. quality | MEDIUM | 4 months | Optimize outcomes |
+| 7 | **Hierarchy Streamlining** - Use ER diagram structure | LOW | 3 months | Improve administration |
+| 8 | **High-Cost Patient Prediction** - Early intervention system | HIGH | 6-12 months | Improve outcomes |
+
+**Expected Annual Savings:** $20,000 - $30,000
+
+---
 ## References
 
 1. Oracle 21c SQL Language Reference
