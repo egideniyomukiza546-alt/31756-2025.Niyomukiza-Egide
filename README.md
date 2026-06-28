@@ -534,6 +534,7 @@ WITH DepartmentAnalysis AS (
     FROM Doctors d
     JOIN Admissions a ON d.doctor_id = a.doctor_id
     GROUP BY d.department
+Diagnostic Analysis.png
 )
 SELECT 
     department,
